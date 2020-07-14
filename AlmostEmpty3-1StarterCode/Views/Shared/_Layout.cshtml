@@ -3,7 +3,8 @@
 <html>
     
     <head>
-        <title></title>
+       @* <title>@ViewBag.Title</title> *@
+        <title>@ViewData["Title"]</title>
     </head>
     <body>
         <header>
@@ -13,7 +14,7 @@
             @RenderBody()
         </main>
         <footer>
-            &copy;2020
+            &copy;@DateTime.Today.Year
         </footer>
     </body>
 
